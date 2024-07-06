@@ -21,7 +21,7 @@
 </head>
 <body>
     <header class="mx-auto flex justify-center">
-        <nav class="flex fixed bg-primary px-4 w-[1260px] mx-auto max-w-screen-xl items-center justify-between py-[30px] ">
+        <nav class="flex fixed bg-primary px-4 z-50 w-[1260px] mx-auto max-w-screen-xl items-center justify-between py-[30px] ">
             <div>
                 <img src="/asset/logo.png" alt="">
             </div>
@@ -37,9 +37,37 @@
         </nav>
     </header>
     <main>
-        <section class="bg-primary max-w-screen-xl z-10 min-h-[calc(100vh-98px)] mx-auto">
-                <div class="">
-                    <img class="mix-blend-multiply" src="./asset/heropng.png" />
+        <section class="bg-primary max-w-screen-xl z-10 relative min-h-screen mx-auto">
+                <div class="flex justify-center items-center h-full w-full absolute">
+                    <img class="mix-blend-multiply relative" src="./asset/heropng.png" />
+                    <div class="absolute">
+                        <h1 class="font-nanum text-[78px] text-center font-normal text-white">
+                            The WPPOOL Index
+                        </h1>
+                        <p class="text-xl font-poppins text-center font-normal text-white">Monitor the performance of emerging, publicly traded, financial technology companies</p>
+
+                    </div>
+                </div>
+                <div class="absolute bottom-11 space-y-8 left-11">
+                    <div>
+                        <h1 class="font-nanum text-white text-5xl">60</h1>
+                        <p class="font-poppins text-[#CDCDCD] text-base">Companies</p>
+                    </div>
+                    <div>
+                        <h1 class="font-nanum text-white text-5xl">$100B</h1>
+                        <p class="font-poppins text-[#CDCDCD] text-base">Market cap</p>
+                    </div>
+                    <div>
+                        <h1 class="font-nanum text-white text-5xl">3.5x</h1>
+                        <p class="font-poppins text-[#CDCDCD] text-base">Revenue multiple</p>
+                    </div>
+                    <div>
+                        <h1 class="font-nanum text-white text-5xl">60%</h1>
+                        <p class="font-poppins text-[#CDCDCD] text-base">LTM avg. revenue growth rate</p>
+                    </div>
+                </div>
+                <div class="absolute bottom-10 right-10 text-primary text-2xl bg-white w-[45px] h-[45px] flex justify-center items-center rounded-full">
+                    <i class="fa-solid fa-arrow-down"></i>
                 </div>
         </section>
     </main>
