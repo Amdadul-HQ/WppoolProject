@@ -94,7 +94,7 @@
             </nav>
             <div class="mt-5 flex gap-x-6">
                 <div class="w-[20%] flex">
-                    <ul class="text-base font-nanum p-3 w-full bg-[#EFF3F6] min-h-screen rounded-[14px]">
+                    <ul class="text-base font-nanum p-3 w-full bg-[#EFF3F6] h-[700px] rounded-[14px]">
                         <li
                             class="flex items-center bg-primary px-4 py-2 text-white rounded-md justify-between cursor-pointer">
                             The Index <p>-</p>
@@ -127,25 +127,67 @@
                     <div class="grid grid-cols-4 gap-x-5 mt-[10px]">
                         <div class="px-4 py-3 flex justify-between rounded-md items-center bg-[#F3F3F3]">
                             <h3 class="text-3xl font-nanum text-[#FC714D]">+66.2%</h3>
-                            <p class="text-[#191618] text-sm text-right font-poppins border-r-[3px] pr-2 border-[#FC714D]">WPPOOL <br> Index</p>
+                            <p
+                                class="text-[#191618] text-sm text-right font-poppins border-r-[3px] pr-2 border-[#FC714D]">
+                                WPPOOL <br> Index</p>
                         </div>
                         <div class="px-4 py-3 flex justify-between rounded-md items-center bg-[#F3F3F3]">
                             <h3 class="text-3xl font-nanum text-[#615DE3]">+26.6%</h3>
-                            <p class="text-[#191618] text-sm text-right font-poppins border-r-[3px] pr-2 border-[#615DE3]">Goolge <br> Index</p>
+                            <p
+                                class="text-[#191618] text-sm text-right font-poppins border-r-[3px] pr-2 border-[#615DE3]">
+                                Goolge <br> Index</p>
                         </div>
                         <div class="px-4 py-3 flex justify-between rounded-md items-center bg-[#F3F3F3]">
                             <h3 class="text-3xl font-nanum text-[#7CA63A]">+34.1%</h3>
-                            <p class="text-[#191618] text-sm text-right font-poppins border-r-[3px] pr-2 border-[#7CA63A]">Microsoft</p>
+                            <p
+                                class="text-[#191618] text-sm text-right font-poppins border-r-[3px] pr-2 border-[#7CA63A]">
+                                Microsoft</p>
                         </div>
                         <div class="px-4 py-3 flex justify-between rounded-md items-center bg-[#F3F3F3]">
                             <h3 class="text-3xl font-nanum text-[#6F34A1]">+17%</h3>
-                            <p class="text-[#191618] text-sm text-right font-poppins border-r-[3px] pr-2 border-[#6F34A1]">Twitter<br> Index</p>
+                            <p
+                                class="text-[#191618] text-sm text-right font-poppins border-r-[3px] pr-2 border-[#6F34A1]">
+                                Twitter<br> Index</p>
                         </div>
+                    </div>
+                    <div class="mt-5 flex items-center justify-between">
+                        <div class="flex items-center gap-x-4">
+                            <div>
+                                <select class="bg-primary py-2 px-3 rounded-full font-poppins text-white pr-28" name=""
+                                    id="">
+                                    <option>Sectors</option>
+                                    <option>Sectors</option>
+                                    <option>Sectors</option>
+                                </select>
+                            </div>
+                            <div>
+                                <select class="bg-primary py-2 px-3 rounded-full font-poppins text-white pr-20" name=""
+                                    id="">
+                                    <option>Types of IPO</option>
+                                    <option>Types of IPO</option>
+                                    <option>Types of IPO</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div>
+                            <ul class="flex items-center text-[#748DA1] font-poppins bg-[#EFF3F6] rounded-full">
+                                <li class="px-4 py-2">1Y</li>
+                                <li class="px-4 py-2">YTD</li>
+                                <li class="px-4 py-2 text-white bg-primary rounded-full">6M</li>
+                                <li class="px-4 py-2">1M</li>
+                                <li class="px-4 py-2">1W</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mt-5">
+                        <canvas id="lineChart" ></canvas>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/app/app.js"></script>
 </body>
 
 </html>
