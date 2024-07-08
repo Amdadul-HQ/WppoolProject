@@ -42,3 +42,27 @@ new Chart(ctx, {
     }
   }
 });
+
+
+
+const menu = document.getElementById('menu')
+const closemenu = document.getElementById('close')
+const btn = document.getElementById('btn')
+const share = document.getElementById('share')
+const showmenu = document.getElementById('showmenu')
+
+menu.addEventListener("click",()=>{
+  menu.classList.remove('text-white')
+  menu.classList.add('hidden','text-black')
+  btn.classList.add(['bg-primary'])
+  share.classList.add(['bg-[#AFCD80]'])
+  closemenu.classList.remove('hidden')
+  showmenu.classList.remove('-right-96')
+})
+
+closemenu.addEventListener ("click",()=>{
+  closemenu.classList.add('hidden')
+  btn.classList.remove(['bg-primary'])
+  share.classList.remove(['bg-[#AFCD80]'])
+  menu.classList.remove('hidden')
+})

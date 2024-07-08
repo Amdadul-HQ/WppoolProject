@@ -25,18 +25,31 @@
 
 <body>
     <header class="mx-auto flex justify-center">
-        <nav class="flex bg-primary z-50 w-full px-4 mx-auto max-w-screen-xl items-center justify-between py-[30px] ">
+        <nav class="flex bg-primary relative z-50 w-full px-4 mx-auto max-w-screen-xl items-center justify-between py-[30px] ">
             <div>
                 <img src="/asset/logo.png" alt="">
             </div>
-            <div class="flex items-center space-x-4">
-                <i class="fa-solid fa-share-nodes p-3 border rounded-full text-white "></i>
-                <button class="font-poppins px-4 py-2 border rounded-[30px] text-white text-sm">
+            <div class="flex items-center space-x-4 z-20">
+                <i id="share" class="fa-solid fa-share-nodes p-3 border rounded-full text-white "></i>
+                <button id="btn" class="font-poppins px-4 py-2 border rounded-[30px] text-white text-sm">
                     Download the 2024 Report
                 </button>
                 <div>
-                    <i class="fa-solid fa-bars text-white text-2xl"></i>
+                    <i id="menu" class="fa-solid fa-bars text-white text-2xl"></i>
+                    <i id="close" class="fa-solid fa-x text-black text-2xl hidden"></i>
                 </div>
+            </div>
+            <div id="showmemu" class="fixed transition-all duration-500 bg-white rounded-2xl top-0 -right-96 pt-14 px-10">
+                <ul class="text-[#191618] p-9 font-poppins space-y-6">
+                    <li>The WPPOOL Index</li>
+                    <li>All Companies</li>
+                    <li>Potential Future Listings</li>
+                    <li>State of USA</li>
+                    <li>Stories & Ideas</li>
+                    <li>About WPPOOL</li>
+                    <li>WPPOOL Portfolio Companies</li>
+                    <li class="font-nanum text-primary text-xl mt-9">Visit WPPOOL</li>
+                </ul>
             </div>
         </nav>
     </header>
