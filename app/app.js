@@ -52,23 +52,28 @@ const share = document.getElementById('share')
 const showmenu = document.getElementById('showmenu')
 
 menu.addEventListener("click",()=>{
-  menu.classList.remove('text-white')
-  menu.classList.add('hidden','text-black')
+  showmenu.classList.add('showmenu')
+  menu.classList.add('hidden')
   closemenu.classList.remove('hidden')
-  showmenu.classList.remove('-right-96','opacity-0')
-  showmenu.classList.add('right-2','opacity-100')
-  // btn.classList.add(['bg-primary'])
   share.classList.add('bg-[#AFCD80]')
-  // showmenu.classList.add('opacity-100')
-  // showmenu.classList.remove('hidemenu')
-  // showmenu.classList.remove('-right-96')
 })
 
 closemenu.addEventListener ("click",()=>{
-  closemenu.classList.add('hidden')
-  showmenu.classList.remove('right-2','opacity-100')
-  showmenu.classList.add('-right-96','opacity-0')
-  // btn.classList.remove(['bg-primary'])
-  share.classList.remove(['bg-[#AFCD80]'])
+  showmenu.classList.remove('showmenu')
   menu.classList.remove('hidden')
+  closemenu.classList.add('hidden')
+  share.classList.remove('bg-[#AFCD80]')
 })
+
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: "auto",
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});

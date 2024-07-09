@@ -16,9 +16,10 @@ body{
 }
 
 .hidemenu{
-    display: none;
-
+    right: -150px;
+    opacity: 0;
 }
 .showmenu{
-    display: block;
+    right: 8px;
+    opacity: 1;
 }
