@@ -14,3 +14,11 @@
 body{
     background-color: #EDEDED;
 }
+
+.hidemenu{
+    display: none;
+
+}
+.showmenu{
+    display: block;
+}
